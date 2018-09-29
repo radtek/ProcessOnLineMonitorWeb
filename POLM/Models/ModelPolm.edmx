@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModelPolm.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'EXTDEV.POLM_CONFIG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="POLM_CONFIG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FAMILY" Type="varchar2" MaxLength="50" />
+          <Property Name="TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="PARKEY" Type="varchar2" MaxLength="50" />
+          <Property Name="PARVALUE" Type="varchar2" MaxLength="500" />
+          <Property Name="MACHINE" Type="varchar2" MaxLength="50" />
+          <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+          <Property Name="DATA" Type="varchar2" MaxLength="500" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'EXTDEV.POLM_WI_OV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="POLM_WI_OV">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="MCTYPE" Type="varchar2" MaxLength="20" />
+          <Property Name="PROJECT" Type="varchar2" MaxLength="20" />
+          <Property Name="FILENAME" Type="varchar2" MaxLength="100" />
+          <Property Name="WORKSHEET" Type="varchar2" MaxLength="100" />
+          <Property Name="DOCNUM" Type="varchar2" MaxLength="20" />
+          <Property Name="DOCREV" Type="varchar2" MaxLength="20" />
+          <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+          <Property Name="UPDATETIME" Type="date" />
+          <Property Name="LINE" Type="varchar2" MaxLength="20" />
+          <Property Name="EFFDATE" Type="date" />
+        </EntityType>
+        <EntityContainer Name="ModelPolmStoreContainer">
+          <EntitySet Name="POLM_CONFIG" EntityType="Self.POLM_CONFIG" store:Type="Tables" store:Schema="EXTDEV">
+            <DefiningQuery>SELECT 
+"POLM_CONFIG"."ID" AS "ID", 
+"POLM_CONFIG"."FAMILY" AS "FAMILY", 
+"POLM_CONFIG"."TYPE" AS "TYPE", 
+"POLM_CONFIG"."PARKEY" AS "PARKEY", 
+"POLM_CONFIG"."PARVALUE" AS "PARVALUE", 
+"POLM_CONFIG"."MACHINE" AS "MACHINE", 
+"POLM_CONFIG"."REMARK" AS "REMARK", 
+"POLM_CONFIG"."DATA" AS "DATA"
+FROM "EXTDEV"."POLM_CONFIG" "POLM_CONFIG"</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="POLM_WI_OV" EntityType="Self.POLM_WI_OV" store:Type="Tables" store:Schema="EXTDEV">
+            <DefiningQuery>SELECT 
+"POLM_WI_OV"."ID" AS "ID", 
+"POLM_WI_OV"."MCTYPE" AS "MCTYPE", 
+"POLM_WI_OV"."PROJECT" AS "PROJECT", 
+"POLM_WI_OV"."FILENAME" AS "FILENAME", 
+"POLM_WI_OV"."WORKSHEET" AS "WORKSHEET", 
+"POLM_WI_OV"."DOCNUM" AS "DOCNUM", 
+"POLM_WI_OV"."DOCREV" AS "DOCREV", 
+"POLM_WI_OV"."REMARK" AS "REMARK", 
+"POLM_WI_OV"."UPDATETIME" AS "UPDATETIME", 
+"POLM_WI_OV"."LINE" AS "LINE", 
+"POLM_WI_OV"."EFFDATE" AS "EFFDATE"
+FROM "EXTDEV"."POLM_WI_OV" "POLM_WI_OV"</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelPolm" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="POLM_CONFIG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+          <Property Name="FAMILY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PARKEY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PARVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="MACHINE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DATA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="POLM_CONFIG" EntityType="Self.POLM_CONFIG" />
+          <EntitySet Name="POLM_WI_OVSet" EntityType="ModelPolm.POLM_WI_OV" />
+        </EntityContainer>
+        <EntityType Name="POLM_WI_OV">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="MCTYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PROJECT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FILENAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="WORKSHEET" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DOCNUM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DOCREV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="UPDATETIME" Type="DateTime" />
+          <Property Name="LINE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EFFDATE" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelPolmStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="POLM_CONFIG">
+            <EntityTypeMapping TypeName="ModelPolm.POLM_CONFIG">
+              <MappingFragment StoreEntitySet="POLM_CONFIG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FAMILY" ColumnName="FAMILY" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="PARKEY" ColumnName="PARKEY" />
+                <ScalarProperty Name="PARVALUE" ColumnName="PARVALUE" />
+                <ScalarProperty Name="MACHINE" ColumnName="MACHINE" />
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+                <ScalarProperty Name="DATA" ColumnName="DATA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="POLM_WI_OVSet">
+            <EntityTypeMapping TypeName="ModelPolm.POLM_WI_OV">
+              <MappingFragment StoreEntitySet="POLM_WI_OV">
+                <ScalarProperty Name="EFFDATE" ColumnName="EFFDATE" />
+                <ScalarProperty Name="LINE" ColumnName="LINE" />
+                <ScalarProperty Name="UPDATETIME" ColumnName="UPDATETIME" />
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+                <ScalarProperty Name="DOCREV" ColumnName="DOCREV" />
+                <ScalarProperty Name="DOCNUM" ColumnName="DOCNUM" />
+                <ScalarProperty Name="WORKSHEET" ColumnName="WORKSHEET" />
+                <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+                <ScalarProperty Name="PROJECT" ColumnName="PROJECT" />
+                <ScalarProperty Name="MCTYPE" ColumnName="MCTYPE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

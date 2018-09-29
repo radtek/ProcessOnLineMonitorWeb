@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelPolm.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'EXTDEV.POLM_CONFIG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="POLM_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FAMILY" Type="varchar2" MaxLength="50" />
+    <Property Name="TYPE" Type="varchar2" MaxLength="50" />
+    <Property Name="PARKEY" Type="varchar2" MaxLength="50" />
+    <Property Name="PARVALUE" Type="varchar2" MaxLength="500" />
+    <Property Name="MACHINE" Type="varchar2" MaxLength="50" />
+    <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+    <Property Name="DATA" Type="varchar2" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'EXTDEV.POLM_WI_OV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="POLM_WI_OV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="number" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="MCTYPE" Type="varchar2" MaxLength="20" />
+    <Property Name="PROJECT" Type="varchar2" MaxLength="20" />
+    <Property Name="FILENAME" Type="varchar2" MaxLength="100" />
+    <Property Name="WORKSHEET" Type="varchar2" MaxLength="100" />
+    <Property Name="DOCNUM" Type="varchar2" MaxLength="20" />
+    <Property Name="DOCREV" Type="varchar2" MaxLength="20" />
+    <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+    <Property Name="UPDATETIME" Type="date" />
+    <Property Name="LINE" Type="varchar2" MaxLength="20" />
+    <Property Name="EFFDATE" Type="date" />
+  </EntityType>
+  <EntityContainer Name="ModelPolmStoreContainer">
+    <EntitySet Name="POLM_CONFIG" EntityType="Self.POLM_CONFIG" store:Type="Tables" store:Schema="EXTDEV">
+      <DefiningQuery>SELECT 
+"POLM_CONFIG"."ID" AS "ID", 
+"POLM_CONFIG"."FAMILY" AS "FAMILY", 
+"POLM_CONFIG"."TYPE" AS "TYPE", 
+"POLM_CONFIG"."PARKEY" AS "PARKEY", 
+"POLM_CONFIG"."PARVALUE" AS "PARVALUE", 
+"POLM_CONFIG"."MACHINE" AS "MACHINE", 
+"POLM_CONFIG"."REMARK" AS "REMARK", 
+"POLM_CONFIG"."DATA" AS "DATA"
+FROM "EXTDEV"."POLM_CONFIG" "POLM_CONFIG"</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="POLM_WI_OV" EntityType="Self.POLM_WI_OV" store:Type="Tables" store:Schema="EXTDEV">
+      <DefiningQuery>SELECT 
+"POLM_WI_OV"."ID" AS "ID", 
+"POLM_WI_OV"."MCTYPE" AS "MCTYPE", 
+"POLM_WI_OV"."PROJECT" AS "PROJECT", 
+"POLM_WI_OV"."FILENAME" AS "FILENAME", 
+"POLM_WI_OV"."WORKSHEET" AS "WORKSHEET", 
+"POLM_WI_OV"."DOCNUM" AS "DOCNUM", 
+"POLM_WI_OV"."DOCREV" AS "DOCREV", 
+"POLM_WI_OV"."REMARK" AS "REMARK", 
+"POLM_WI_OV"."UPDATETIME" AS "UPDATETIME", 
+"POLM_WI_OV"."LINE" AS "LINE", 
+"POLM_WI_OV"."EFFDATE" AS "EFFDATE"
+FROM "EXTDEV"."POLM_WI_OV" "POLM_WI_OV"</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

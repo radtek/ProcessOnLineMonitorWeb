@@ -1,0 +1,26 @@
+--Process Update parameters to server v1.1
+----File name = MPI - RH Wave Soldering Parameter Setting Rev.56.xls
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - RH Wave Soldering Parameter Setting Rev.56.xls
+----File work sheet length = 5
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Page cover
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=General Requirement
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Profile board
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line3_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line3_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =3
+------Update server overview = Success to insert WIID=121
+------Update server overview ID = 121
+------Convert source data into updated server data = 6260
+------Update server parameter result = Success to update data to server
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line7_ELE600_RoHS
+------------------------------------------Begin to for Wave_Line7_ELE600_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =7
+------Update server overview = Success to insert WIID=122
+------Update server overview ID = 122
+------Convert source data into updated server data = 6000
+------Update server parameter result = Success to update data to server
+                                  

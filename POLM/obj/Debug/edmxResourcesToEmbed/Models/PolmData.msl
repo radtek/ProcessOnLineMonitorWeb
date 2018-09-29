@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PolmDbModelStoreContainer" CdmEntityContainer="PolmEntities">
+    <EntitySetMapping Name="M7_CONFIG">
+      <EntityTypeMapping TypeName="PolmDbModel.M7_CONFIG">
+        <MappingFragment StoreEntitySet="M7_CONFIG">
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="PARVALUE" ColumnName="PARVALUE" />
+          <ScalarProperty Name="PARKEY" ColumnName="PARKEY" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="FAMILY" ColumnName="FAMILY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

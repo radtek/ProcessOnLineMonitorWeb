@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelPolm" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="POLM_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="FAMILY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARKEY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MACHINE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DATA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="POLM_CONFIG" EntityType="Self.POLM_CONFIG" />
+    <EntitySet Name="POLM_WI_OVSet" EntityType="ModelPolm.POLM_WI_OV" />
+  </EntityContainer>
+  <EntityType Name="POLM_WI_OV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="MCTYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PROJECT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FILENAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WORKSHEET" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DOCNUM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOCREV" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="UPDATETIME" Type="DateTime" />
+    <Property Name="LINE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EFFDATE" Type="DateTime" />
+  </EntityType>
+</Schema>

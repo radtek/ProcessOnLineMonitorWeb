@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelPolmStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="POLM_CONFIG">
+      <EntityTypeMapping TypeName="ModelPolm.POLM_CONFIG">
+        <MappingFragment StoreEntitySet="POLM_CONFIG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FAMILY" ColumnName="FAMILY" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="PARKEY" ColumnName="PARKEY" />
+          <ScalarProperty Name="PARVALUE" ColumnName="PARVALUE" />
+          <ScalarProperty Name="MACHINE" ColumnName="MACHINE" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="DATA" ColumnName="DATA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="POLM_WI_OVSet">
+      <EntityTypeMapping TypeName="ModelPolm.POLM_WI_OV">
+        <MappingFragment StoreEntitySet="POLM_WI_OV">
+          <ScalarProperty Name="EFFDATE" ColumnName="EFFDATE" />
+          <ScalarProperty Name="LINE" ColumnName="LINE" />
+          <ScalarProperty Name="UPDATETIME" ColumnName="UPDATETIME" />
+          <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+          <ScalarProperty Name="DOCREV" ColumnName="DOCREV" />
+          <ScalarProperty Name="DOCNUM" ColumnName="DOCNUM" />
+          <ScalarProperty Name="WORKSHEET" ColumnName="WORKSHEET" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="PROJECT" ColumnName="PROJECT" />
+          <ScalarProperty Name="MCTYPE" ColumnName="MCTYPE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

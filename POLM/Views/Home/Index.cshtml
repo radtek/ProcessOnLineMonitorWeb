@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Project Home";
+}
+
+<title>POLM</title>
+
+@Scripts.Render("~/bundles/jsMeHome")
+
+
+
+<div class="jumbotron" style="padding-top: 15px; padding-bottom: 15px; background-color: silver; ">
+    <h2 style="color: white ">Process On-Line Monitor</h2>
+</div>
+
+<div id="divContentCategory"></div>
+
+<div id="divMySpin" style="font-size:12px; text-align:left; color:red; font-weight:500; font-weight:bold"></div>
+
+@Html.Hidden("Url_Home_Operation", Url.Action("ActionOperation", "Home"))

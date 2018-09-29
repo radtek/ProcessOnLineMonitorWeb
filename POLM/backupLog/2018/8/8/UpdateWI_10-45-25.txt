@@ -1,0 +1,24 @@
+--Process Update parameters to server v1.1
+----File name = MPI - RH  RoHS Wave Parameter Setting  Rev 53_Modify01.xlsx
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - RH  RoHS Wave Parameter Setting  Rev 53_Modify01.xlsx
+----File work sheet length = 5
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Page Cover
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=General Requirement
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=W_L3_ELE500
+--------------Begin to update parameter------------------------------------------------
+------get data source =Success
+------get worksheet line =3
+------Update server overview = Success to update WIID=41
+------Update server overview ID = 41
+------Convert source data into updated server data = 6260
+------Update server parameter result = Success to update data to server
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=W_L7_RoHS
+--------------Begin to update parameter------------------------------------------------
+------get data source =Success
+------get worksheet line =7
+------Update server overview = Success to update WIID=42
+------Update server overview ID = 42
+------Convert source data into updated server data = 5680
+------Update server parameter result = Success to update data to server
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Profile board list

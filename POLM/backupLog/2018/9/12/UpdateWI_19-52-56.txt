@@ -1,0 +1,5 @@
+--Process Update parameters to server v1.1
+----File name = MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----File work sheet length = 0

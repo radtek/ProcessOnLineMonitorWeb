@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "WIReview";
+}
+
+<title>WI Review</title>
+
+<script type="text/javascript" src="~/ScriptsMe/UploadWI/ReviewWI.js"></script>
+<script type="text/javascript" src="~/ScriptsMe/UploadWI/ReviewWI_Method.js"></script>
+
+
+<div id="divTitle" class="jumbotron" style="padding-top: 2px; padding-bottom: 5px; background-color: silver; text-align:center; margin-bottom: 2px">
+    <h3 style="color: white; align-content:center; font-weight:bolder "> WorkI Parameters Review</h3>
+</div>
+
+@*<hr />*@
+<div id="divReviewWIAll"></div>
+<div id="divMySpin"></div>
+
+@*<table style="width: 100%; height: 100%; vertical-align: top; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px; ">
+    <tr style="vertical-align:top; height: 60px">
+        <td style="">
+            <div id="divTitle" style="padding-top: 5px; padding-bottom: 5px; margin-bottom: 3px; background-color: silver; ">
+                <h3 style="color: white; align-content:center; font-weight:bolder "> WorkI Parameters Review</h3>
+            </div>
+        </td>
+    </tr>
+    <tr style="vertical-align:top; height: 90%; ">
+        <td>
+            <div id="divReviewWIAll" style="margin-top: 0px; margin-bottom: 0px; height: 100%; border-color:orangered "></div>
+        </td>
+    </tr>
+    <tr style="vertical-align:top;  border:dashed; border-color:red ">
+        <td>
+            <div id="divMySpin"></div>
+        </td>
+    </tr>
+</table>*@
+
+
+
+@Html.Hidden("Url_UploadWI_Operation", Url.Action("ActionOperation", "UploadWI"))

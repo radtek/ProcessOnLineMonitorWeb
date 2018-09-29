@@ -1,0 +1,223 @@
+﻿body {
+}
+
+/*//////////////ExtJS Stuatus style/////////////////////////////////////////////////////////*/
+.Status_Cls {
+    /*//color: #F00;*/
+    /*font-size: 12px;*/
+    font-weight: normal;
+    
+}
+
+/*-------------------------------------for menu begin-----------------------------------------------------*/
+
+.iconHome16 {
+    background-image: url('../Images/Menu/home_16.png');
+    background-repeat: no-repeat;
+}
+
+.iconAbout16 {
+    background-image: url('../Images/Menu/information_16.png');
+    background-repeat: no-repeat;
+}
+
+
+.iconDoc16 {
+    background-image: url('../Images/Menu/doc.gif');
+    background-repeat: no-repeat;
+}
+
+.iconMenuUser16 {
+    background-image: url('../Images/Menu/user_16px.png');
+    background-repeat: no-repeat;
+}
+
+.iconLogout20 {
+    background-image: url('../Images/Menu/user_logout20.png');
+    background-repeat: no-repeat;
+}
+
+.iconMenuQuery16 {
+    background-image: url('../Images/Menu/MenuQuestion16.png');
+    background-repeat: no-repeat;
+}
+
+.iconMenuQ16 {
+    background-image: url('../Images/Menu/MenuQ_16px.png');
+    background-repeat: no-repeat;
+}
+
+
+.iconMenuExcel16 {
+    background-image: url('../Images/Menu/Excel_16.gif');
+    background-repeat: no-repeat;
+}
+
+
+/*-------------------------------------for menu end-----------------------------------------------------*/
+
+
+/*-------for login-----------------------------------------------------*/
+.iconUser16 {
+    background-image: url('../Images/Login/user.png');
+    background-repeat: no-repeat;
+    vertical-align:central;
+}
+
+.iconUserKey16 {
+    background-image: url('../Images/Login/user_key_16px.png');
+    background-repeat: no-repeat;
+    vertical-align:central;
+}
+
+.iconPW16 {
+    background-image: url('../Images/Login/password_16x.png');
+    background-repeat: no-repeat;
+    vertical-align:central;
+}
+
+.iconUserSelect16 {
+    background-image: url('../Images/Login/user_16px.png');
+    background-repeat: no-repeat;
+    vertical-align:central;
+}
+
+
+.iconOK16 {
+    background-image: url('../Images/Login/ok_16px.png');
+    background-repeat: no-repeat;
+}
+
+.iconLogin16 {
+    background-image: url('../Images/Login/login_16px.png');
+    background-repeat: no-repeat;
+}
+
+.iconLogin24 {
+    background-image: url('../Images/Login/login_24px.png');
+    background-repeat: no-repeat;
+}
+
+.iconLogout16 {
+    background-image: url('../Images/Login/logout_16px.png');
+    background-repeat: no-repeat;
+}
+
+.iconLogout20 {
+    background-image: url('../Images/Login/user_logout20.png');
+    background-repeat: no-repeat;
+}
+
+
+.iconCut16 {
+    background-image: url('../Images/Login/cut_16px.png');
+    background-repeat: no-repeat;
+}
+/*-------for login-----------------------------------------------------*/
+
+
+
+/*-------for Home-----------------------------------------------------*/
+.iconRefresh16 {
+    background-image: url('../Images/Home/simple_repeat_16px3.png');
+    background-repeat: no-repeat;
+}
+
+.iconCateList16 {
+    background-image: url('../Images/Home/list_20px.png');
+    background-repeat: no-repeat;
+}
+
+
+.iconExcel16 {
+    background-image: url('../Images/Home/Excel_16.gif');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+
+/*-------for WorkI upload-----------------------------------------------------*/
+.iconElectra32 {
+    background-image: url('../Images/WI/electra_48_e2.jpg');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconBTU32 {
+    background-image: url('../Images/WI/BTU_2_32.gif');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconBTU48 {
+    background-image: url('../Images/WI/BTU_2_48.gif');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconDEK32 {
+    background-image: url('../Images/WI/oven_32.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+
+.iconUpload20 {
+    background-image: url('../Images/WI/im-database-upload_20.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconDownload24 {
+    background-image: url('../Images/WI/database_download_24.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconSheets_24 {
+    background-image: url('../Images/WI/Sheets_24.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconColumn32 {
+    background-image: url('../Images/WI/column32.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconCut16 {
+    background-image: url('../Images/WI/cut_16px.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconEdit24 {
+    background-image: url('../Images/WI/edit.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+/*-------for Report-----------------------------------------------------*/
+.iconData32 {
+    background-image: url('../Images/Report/data.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconemail16 {
+    background-image: url('../Images/Report/email_16px2.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+.iconLink16 {
+    background-image: url('../Images/Report/link.png');
+    vertical-align:central;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+

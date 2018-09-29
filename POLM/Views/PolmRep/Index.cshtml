@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<title>Report</title>
+
+
+<script type="text/javascript" src="~/Scripts/ExtJS/packages/charts.js"></script>
+<script type="text/javascript" src="~/Scripts/ExtJS/packages/exporter.js"></script>
+
+<link type="text/css" href="~/Scripts/ExtJS/packages/charts-all.css" rel="stylesheet" />
+
+<script type="text/javascript" src="~/ScriptsMe/PolmRep/PolmRep.js"></script>
+<script type="text/javascript" src="~/ScriptsMe/PolmRep/PolmRep_Method.js"></script>
+
+
+@*<div class="jumbotron" style="padding-top: 15px; padding-bottom: 15px; background-color: silver; ">
+    <h2 style="color: white ">Process On-Line Monitor</h2>
+</div>*@
+
+<div id="divTitle" class="jumbotron" style="padding-top: 2px; padding-bottom: 5px; background-color: silver; text-align:center; margin-bottom: 2px">
+    <h3 style="color: white; align-content:center; font-weight:bolder "> Process On-Line Monitor</h3>
+</div>
+
+<div id="divChartOV"></div>
+
+<div id="divMySpin" style="font-size:12px; text-align:left; color:red; font-weight:500"></div>
+
+<div id="divRepData"></div>
+<div id="divChartOV2"></div>
+<hr />
+
+
+@Html.Hidden("Url_PolmRep_Operation", Url.Action("ActionOperation", "PolmRep"))
+
+
+
+
+
+

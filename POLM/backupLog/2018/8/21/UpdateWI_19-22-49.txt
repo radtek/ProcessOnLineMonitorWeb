@@ -1,0 +1,35 @@
+--Process Update parameters to server v1.1
+----File name = MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----File work sheet length = 6
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Page cover
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=General Requirement
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Profile board
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line3_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line3_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =3
+------Update server overview = ORA-12899: 列 "EXTDEV"."POLM_WI_OV"."WORKSHEET" 的值太大 (实际值: 22, 最大值: 20)
+ORA-06512: 在 "EXTDEV.P_POLM", line 52
+ORA-06512: 在 line 1
+------Fail Update server overview
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line7_ELE600_RoHS
+------------------------------------------Begin to for Wave_Line7_ELE600_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =7
+------Update server overview = ORA-12899: 列 "EXTDEV"."POLM_WI_OV"."WORKSHEET" 的值太大 (实际值: 22, 最大值: 20)
+ORA-06512: 在 "EXTDEV.P_POLM", line 52
+ORA-06512: 在 line 1
+------Fail Update server overview
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line8_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line8_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =8
+------Update server overview = ORA-12899: 列 "EXTDEV"."POLM_WI_OV"."WORKSHEET" 的值太大 (实际值: 22, 最大值: 20)
+ORA-06512: 在 "EXTDEV.P_POLM", line 52
+ORA-06512: 在 line 1
+------Fail Update server overview
+                                  

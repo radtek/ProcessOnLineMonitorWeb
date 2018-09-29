@@ -1,0 +1,35 @@
+--Process Update parameters to server v1.1
+----File name = MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - DI Wave Soldering Parameter Setting Rev.69.xls
+----File work sheet length = 6
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Page cover
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=General Requirement
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Profile board
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line3_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line3_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =3
+------Update server overview = Success to insert WIID=61
+------Update server overview ID = 61
+------Convert source data into updated server data = 860
+------Update server parameter result = Success to update data to server
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line7_ELE600_RoHS
+------------------------------------------Begin to for Wave_Line7_ELE600_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =7
+------Update server overview = Success to insert WIID=62
+------Update server overview ID = 62
+------Convert source data into updated server data = 840
+------Update server parameter result = Success to update data to server
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line8_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line8_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =8
+------Update server overview = Success to insert WIID=63
+------Update server overview ID = 63
+------Convert source data into updated server data = 840
+------Update server parameter result = Success to update data to server
+                                  

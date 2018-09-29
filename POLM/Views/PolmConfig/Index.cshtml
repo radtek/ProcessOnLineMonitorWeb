@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Config";
+}
+
+<title>Config</title>
+
+
+<script type="text/javascript" src="~/Scripts/ExtJS/packages/charts.js"></script>
+<script type="text/javascript" src="~/Scripts/ExtJS/packages/exporter.js"></script>
+
+<link type="text/css" href="~/Scripts/ExtJS/packages/charts-all.css" rel="stylesheet" />
+
+<script type="text/javascript" src="~/ScriptsMe/PolmConfig/PolmConfig.js"></script>
+@*<script type="text/javascript" src="~/ScriptsMe/PolmRep/PolmRep_Method.js"></script>*@
+
+
+@*<div class="jumbotron" style="padding-top: 15px; padding-bottom: 15px; background-color: silver; ">
+        <h2 style="color: white ">Process On-Line Monitor</h2>
+    </div>*@
+
+<div id="divTitle" class="jumbotron" style="padding-top: 2px; padding-bottom: 5px; background-color: silver; text-align:center; margin-bottom: 2px">
+    <h3 style="color: white; align-content:center; font-weight:bolder "> Config for POLM</h3>
+</div>
+
+<div id="divConfig"></div>
+
+<div id="divMySpin" style="font-size:12px; text-align:left; color:red; font-weight:500"></div>
+
+<hr />
+
+
+@Html.Hidden("Url_Config_Action", Url.Action("ActionOperation", "PolmConfig"))
+
+
+
+
+
+

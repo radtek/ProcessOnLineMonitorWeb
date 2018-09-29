@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EfPolmModel.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="12.2" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EXTDEV.POLM_CATEGORY' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="POLM_CATEGORY">
+          <Property Name="IID" Type="number" Precision="38" Scale="0" />
+          <Property Name="CATEGORY" Type="varchar2" MaxLength="20" />
+          <Property Name="ITEM" Type="varchar2" MaxLength="50" />
+          <Property Name="LINK" Type="varchar2" MaxLength="50" />
+          <Property Name="ITEMDESC" Type="varchar2" MaxLength="200" />
+          <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+          <Property Name="ITEMCOMM" Type="varchar2" MaxLength="200" />
+          <Property Name="VIEWORDER" Type="number" Precision="38" Scale="0" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EXTDEV.POLM_CONFIG' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="POLM_CONFIG">
+          <Property Name="ID" Type="number" Precision="38" Scale="0" />
+          <Property Name="FAMILY" Type="varchar2" MaxLength="50" />
+          <Property Name="TYPE" Type="varchar2" MaxLength="50" />
+          <Property Name="PARKEY" Type="varchar2" MaxLength="50" />
+          <Property Name="PARVALUE" Type="varchar2" MaxLength="500" />
+          <Property Name="MACHINE" Type="varchar2" MaxLength="50" />
+          <Property Name="REMARK" Type="varchar2" MaxLength="200" />
+          <Property Name="DATA" Type="varchar2" MaxLength="500" />
+        </EntityType>-->
+  <EntityContainer Name="EfPolmModelStoreContainer" />
+</Schema>

@@ -1,0 +1,25 @@
+--Process Update parameters to server v1.1
+----File name = MPI - K1 Wave Soldering Parameter Setting Rev.46_newFormat.xls
+----Folder name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\
+----Get File full name= D:\JianMing\Project\2018_Application\ProcessOnLineMonitor\ExcelUpload\Wave\MPI - K1 Wave Soldering Parameter Setting Rev.46_newFormat.xls
+----File work sheet length = 4
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Page cover
+----Check if need update = false, Fail for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=General Requirement
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_Line8_ELE500_RoHS
+------------------------------------------Begin to for Wave_Line8_ELE500_RoHS------------------------------------------------
+------get data source =Success
+------get worksheet line =8
+------Update server overview = Success to insert WIID=101
+------Update server overview ID = 101
+------Convert source data into updated server data = 1020
+------Update server parameter result = Success to update data to server
+                                  
+----Check if need update = true, Success for regex=[WRD]+\w*[_L]+\w*[_]+ , for Sheet=Wave_L20_ERSA_Pb
+------------------------------------------Begin to for Wave_L20_ERSA_Pb------------------------------------------------
+------get data source =Success
+------get worksheet line =20
+------Update server overview = Success to insert WIID=102
+------Update server overview ID = 102
+------Convert source data into updated server data = 60
+------Update server parameter result = Success to update data to server
+                                  

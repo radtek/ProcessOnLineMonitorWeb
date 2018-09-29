@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<title>Upload WI</title>
+
+
+<script type="text/javascript" src="~/ScriptsMe/UploadWI/UploadWI.js"></script>
+<script type="text/javascript" src="~/ScriptsMe/UploadWI/UploadWI_Method.js"></script>
+
+
+@*<div class="jumbotron" style="padding-top: 15px; padding-bottom: 15px; background-color: silver; ">
+    <h2 style="color: white ">Upload WI and Read Parameters</h2>
+</div>*@
+
+<div class="jumbotron" style="padding-top: 2px; padding-bottom: 5px; background-color: silver; text-align:center; margin-bottom: 2px">
+    <h3 style="color: white; align-content:center; font-weight:bolder "> Upload WorkI and Read Parameters</h3>
+</div>
+
+
+
+<div id="divUploadWI"></div>
+<div id="divMySpin" style="font-size:12px; text-align:left; color:red; font-weight:500"></div>
+<div id="divUploadWIContent"></div>
+
+
+@Html.Hidden("Url_UploadWI_uploadFiles", Url.Action("uploadFiles", "UploadWI"))
+@Html.Hidden("Url_UploadWI_Operation", Url.Action("ActionOperation", "UploadWI"))
+
+

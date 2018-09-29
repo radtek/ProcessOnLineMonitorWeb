@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PolmDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PolmEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Entity1Set" EntityType="PolmDbModel.Entity1" />
+    <EntitySet Name="M7_CONFIG" EntityType="PolmDbModel.M7_CONFIG" />
+  </EntityContainer>
+  <EntityType Name="Entity1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="M7_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="TYPE" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="FAMILY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TYPE" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARKEY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PARVALUE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="REMARK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

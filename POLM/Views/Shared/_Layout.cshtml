@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    @*<title></title>*@
+    @*@Styles.Render("~/Content/css")  这个会导致combox无法正确显示*@
+
+
+    @Styles.Render("~/Content/bootstrap.min.css")
+
+
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <script type="text/javascript" src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <link type="text/css" href="~/Scripts/ExtJS/classic/theme-gray/resources/theme-gray-all.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/ExtJS/ext-all.js"></script>
+    <script type="text/javascript" src="~/Scripts/ExtJS/packages/StatusBar.js"></script>
+    <script type="text/javascript" src="~/Scripts/ExtJS/packages/exporter.js"></script>
+    <script type="text/javascript" src="~/ScriptsMe/Common/spin.min.js"></script>
+    <script type="text/javascript" src="~/ScriptsMe/Common/CommonSignalR.js"></script>
+
+    <script type="text/javascript" src="~/Scripts/jquery.signalR-2.2.3.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    <link href="~/Content/myIconStyle.css" rel="stylesheet" type="text/css" />
+    @Scripts.Render("~/bundles/jsMeCommon") 
+
+</head>
+<body id="divBody" style="padding:0px 0px 0px 0px; height:100%; border:none; border-color:red; ">
+    <div id="prgTitle" class="navbar navbar-static-top" style="width: 100%;border:none; border-color:red; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px; " >
+        <div class="container">
+            <table style="width: 100%; border: none; vertical-align: top">
+                <tr>
+                    <td style="width: 250px; border:none">
+                        <div class="navbar-header navbar-left">
+                            <img src="~/Images/Common/CelesticaLogo_org.jpg" style="width: 70%" />
+                        </div>
+                    </td>
+                    <td style="vertical-align:top; border:none">
+                        <div class="navbar-header navbar-left" style="width:100%">
+                            <div id="divMyMenu" style="width:100%"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="contAll"  class="container body-content" style="padding: 0px 0px 0px 0px; margin-top: 0px; margin-bottom: 0px; border:none; border-color: blue;">
+        <div id="contMain" style="border:none; border-color:green;">
+            @RenderBody()
+        </div>
+        <div id="contFooter" class="container" style="bottom: 1px; position:fixed; padding: 0px">
+            <div id="divComStatus" style="width:100%;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+
+
+@Html.Hidden("Url_Page_Home", Url.Action("Index", "Home"))
+@Html.Hidden("Url_Page_About", Url.Action("About", "Home"))
+@Html.Hidden("Url_Page_RealData", Url.Action("RealData", "Home"))
+
+@Html.Hidden("Url_Page_PolmRep", Url.Action("Index", "PolmRep"))
+@Html.Hidden("Url_Page_UploadWI", Url.Action("Index", "UploadWI"))
+@Html.Hidden("Url_Page_WIReview", Url.Action("WIReview", "UploadWI"))
+
+
+
+@Html.Hidden("Url_Home_Operation", Url.Action("ActionOperation", "Home"))
+
+
+
+@*////////////////////////////////user login module/////////////////////////////////////////////////////////////////*@
+@Html.Hidden("Url_Common_Login", Url.Action("LoginData", "AccountMe"))
+@Html.Hidden("Url_UserPwConfirm", Url.Action("UserPwConfirm", "AccountMe"))
+@Html.Hidden("Url_UserData", Url.Action("UserOperation_Data", "AccountMe"))
+@Html.Hidden("Url_UserAction", Url.Action("UserOperation_Action", "AccountMe"))
+
+@*////////////////////
+    URL=>901 = Owner
+    /////////////////////////////////////////////////////////////////////////////*@
+@Html.Hidden("Url_PolmConfig", Url.Action("Index", "PolmConfig", new { Model = "901"})) 
+
+
+@*//////////////////////////////////////////////////////////////////////*@
+<script type="text/javascript">
+    //debugger;
+    var timeSet = 10; //$("#Cfg_FreshTime").val();
+    var timeout = 1000;//
+    var timer;
+    var nCount = 0;
+    timer = $.timer(timeout, function () {
+        //$("#console").append("Timer completed.<br />");
+        //debugger;
+        nCount = nCount + 1;
+        if (nCount == timeSet) {
+            try {
+                //debugger;
+                timer.pause();
+                nCount = 0;
+
+                var user = glbLogin_getCookie("username");
+                var userEN = glbLogin_getCookie("userEN");
+                if (user != "")
+                    Ext.getCmp('status_User').setText(user + "(" + userEN + ")");
+                else
+                    Ext.getCmp('status_User').setText("");
+
+
+                var vProject = glbLogin_getCookie("project");
+                Ext.getCmp('status_Project').setText("project:(" + vProject + ")");
+
+            }
+            catch (err) {
+                alert(err.message);
+            }
+            finally {
+                timer.resume();
+            }
+        }
+        //$("#console").text(timeSet + "/" + nCount);
+    });
+</script>
